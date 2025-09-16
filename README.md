@@ -50,7 +50,7 @@ Para executar este projeto em sua máquina local, siga os passos abaixo.
 2.  **Navegue até o diretório do projeto:**
 
     ```bash
-    cd <`app/page.js`>
+    cd <app/page.js>
     ```
 
 3.  **Instale as dependências:**
