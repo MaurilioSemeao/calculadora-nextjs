@@ -1,0 +1,20 @@
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    border: 2px solid #555;
+    border-radius: 10px;
+    box-shadow:  0 5px 15px  rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Garante que os cantos arredondados sejam aplicados aos filhos */
+}
+
+.keypad {
+    display: grid;
+    padding: 3px;
+
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Faz o botão '=' e o '+' ocuparem mais espaço se necessário (opcional) */
+.keypad button[value="."] {
+    grid-row: span ;
+}

@@ -1,0 +1,24 @@
+.button {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 4px;
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+
+.operator {
+    background-color: #f39c12;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #e67e22;
+}
