@@ -1,38 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Calculadora Simples com Next.js
 
-First, run the development server:
+Este é um projeto de uma calculadora web simples, construída com o objetivo de praticar e demonstrar o uso de Next.js, React e CSS Modules para a criação de componentes estilizados.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Visão Geral
+
+A aplicação apresenta uma calculadora com as operações aritméticas básicas. A interface foi desenvolvida de forma componentizada, e a estilização é modular e organizada, com uma distinção clara entre estilos globais e estilos de componentes.
+
+## Tecnologias Utilizadas
+
+  * **Next.js**: Framework React para renderização no servidor e geração de sites estáticos.
+  * **React**: Biblioteca JavaScript para construir interfaces de usuário.
+  * **CSS Modules**: Para estilização local e componentizada, evitando conflitos de nomes de classes.
+  * **Geist Font**: Fonte moderna utilizada no layout principal da aplicação.
+
+## Estrutura de Arquivos
+
+O projeto está organizado da seguinte forma:
+
+```
+.
+├── app/
+│   ├── components/
+│   │   ├── Calculator.js         # Componente principal da calculadora
+│   │   ├── Display.js            # Componente da tela de exibição
+│   │   └── Button.js             # Componente de botão
+│   ├── styles/
+│   │   ├── Button.module.css     # Estilos para os botões
+│   │   ├── Calculator.module.css # Estilos para o corpo da calculadora
+│   │   ├── Container.module.css  # Estilos para o container principal
+│   │   └── Display.module.css    # Estilos para a tela de exibição
+│   ├── globals.css               # Estilos globais da aplicação
+│   ├── layout.js                 # Layout raiz da aplicação
+│   └── page.js                   # Página inicial que renderiza a calculadora
+└── public/
+    └── favicon.ico               # Ícone da aplicação
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Como Executar o Projeto Localmente
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Para executar este projeto em sua máquina local, siga os passos abaixo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Clone o repositório:**
 
-## Learn More
+    ```bash
+    git clone <https://github.com/MaurilioSemeao/calculadora-nextjs.git>
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2.  **Navegue até o diretório do projeto:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    cd <`app/page.js`>
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3.  **Instale as dependências:**
+    Use `npm` ou `yarn` para instalar os pacotes necessários.
 
-## Deploy on Vercel
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4.  **Inicie o servidor de desenvolvimento:**
+    Este comando iniciará a aplicação em modo de desenvolvimento.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# calculadora-nextjs
-# calculadora-nextjs
+    ```bash
+    npm run dev
+    # ou
+    yarn dev
+    ```
+
+5.  **Acesse a aplicação:**
+    Abra seu navegador e acesse [http://localhost:3000](http://localhost:3000) para ver a calculadora em funcionamento.
